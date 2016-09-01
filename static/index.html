@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!-- PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" -->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="/m/styles.css">
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/m/scripts.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="room">
+                <div class="section">
+                    <div class="main_logo" id="logo">
+                        <a href="http://ru.stackoverflow.com/">Stack Overflow на русском</a>
+                    </div>
+                    <!--div class="title">Stack Overflow – место, где рады вопросам по программированию</div-->
+                    <div class="title">Stack Overflow Is A Welcome Place For Programming Questions</div>
+                    <div class="stats">
+                        <div class="row">
+                            <div class="col col_left">
+                                <p>
+                                    <!--Вопросов-->
+                                    Questions
+                                    <!--span class="light">количество вопросов в месяц</span-->
+                                    <span class="light">number of questions per month</span>
+                                    <span class="number">5 448</span> 
+                                </p>
+                            </div>
+                            <div class="col">
+                                <p>
+                                    <!--Ответов-->
+                                    Answers
+                                    <!--span class="light">количество ответов в месяц</span-->
+                                    <span class="light">number of answers per month</span>
+                                    <span class="number">5 482</span> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col_left">
+                                <p>
+                                    <!--Отвечено-->
+                                    Answered
+                                    <!--span class="light">% получения ответа</span-->
+                                    <span class="light">% answered questions</span>
+                                    <span class="number">86%</span> 
+                                </p>
+                            </div>
+                            <div class="col">
+                                <p>
+                                    <!--Время ответа-->
+                                    Time
+                                    <!--span class="light">среднее время получения верного ответа</span-->
+                                    <span class="light">average time of getting the right answer</span>
+                                    <span class="number">48 minutes</span> 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section" id="user_section">
+                    <div class="title">Problem – Stack Overflow – Solution</div>
+                    <!--div class="sub_title">Лучшие разработчики отвечают на ваши вопросы</div-->
+                    <div class="sub_title">Best developers answer your questions</div>
+                    <div class="users_wrapper">
+                        <div id="left_arrow">
+                            <img src="/m/img/left-arrow.png">
+                        </div>
+                        <div id="users_root">
+                            <div class="row">
+                                <div class="col_left">
+                                    <a id="user_profile" href="/">
+                                        <img id="avatar" src="">
+                                        <div class="username" id="username">
+                                        </div>
+                                        <div>
+                                            <!--span class="rep_title">репутация: </span-->
+                                            <span class="rep_title">reputation: </span>
+                                            <span id="reputation"></span>
+                                        </div>
+                                        <div>
+                                            <div id="tag_root" class="tags"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col_right">
+                                    <div id="answer_root">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="right_arrow">
+                            <img src="/m/img/arrow-right.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <!--div class="title">Ответ на ваш вопрос</div-->
+                    <div class="title">Answer To Your Question</div>
+                    <!--div class="sub_title">Задать вопрос – это как запрос к поисковику, только с тремя полями ввода</div-->
+                    <div class="sub_title">Ask a question is like searching in Google but only with three inputs</div>
+                    <div class="ask_wrapper">
+                        <div class="row row_title">
+                            <div class="headline">
+                                <!--Заголовк вопроса – этот тот же поисковый запрос-->
+                                Title is like a search query.
+                            </div>
+                            <div class="view">
+                                <!--div class="pre_title">Заголовок</div-->
+                                <div class="pre_title">Title</div>
+                                <!--div class="title">В чем заключается ваш вопрос? Будьте конкретны.</div-->
+                                <div class="title">What's your programming question? Be specific.</div>
+                            </div>
+                        </div>
+                        <div class="row row_body">
+                            <div class="headline">
+                                <!--Тело вопроса – это детали проблемы, которые не вместились в поисковой запрос (например, код).-->
+                                Question's body contains problems that are missed in the search query (the code, for example). 
+                            </div>
+                            <div class="view">
+                                <div class="editor_container">
+                                    <div class="button_bar">
+                                        <div class="button_row">
+                                            <li class="button"><span></span></li>
+                                            <li class="button"><span></span></li>
+                                            <li class="spacer"></li>
+                                            <li class="button"><span></span></li>
+                                            <li class="button"><span></span></li>
+                                            <li class="button"><span></span></li>
+                                            <li class="button"><span></span></li>
+                                            <li class="button"><span></span></li>
+                                            <li class="spacer"></li>
+                                            <li class="button"><span></span></li>
+                                            <li class="button"><span></span></li>
+                                            <li class="button"><span></span></li>
+                                            <li class="button"><span></span></li>
+                                            <li class="spacer"></li>
+                                            <li class="button"><span></span></li>
+                                            <li class="button"><span></span></li>
+                                        </div>
+                                    </div>
+                                    <div class="input">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row_tags">
+                            <div class="headline">
+                                <!--Метки вопроса – это описание технологий, о которых идет речь в вопросе.-->
+                                Question's tags describe technologies that you are using.
+                            </div>
+                            <div class="view">
+                                <!--div class="pre_title">Метки</div-->
+                                <div class="pre_title">Tags</div>
+                                <!--div class="title">Введите не менее одной метки и не более 5, например, python css php.</div-->
+                                <div class="title">at least one tag such as (.net git facebook), max 5 tags</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section" style="border:none;">
+                    <!--div class="title">Получите ответ сейчас!</div-->
+                    <div class="title">Get An Answer Now!</div>
+                    <div class="big_buttons">
+                        <!--a id="ask_question">Задать вопрос</a-->
+                        <a id="ask_question">Ask Question</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
