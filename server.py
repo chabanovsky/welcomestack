@@ -6,7 +6,6 @@ import json, requests
 import os
 import sys
 import memcache
-from wsgiref.simple_server import make_server
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -18,7 +17,7 @@ target_site = "ru.stackoverflow"
 
 PORT = 8000
 PAGE_SIZE = 10
-DOCUMENT_ROOT = ""
+DOCUMENT_ROOT = "/development/welcometostack"
 
 mckey = "response"
 mc = memcache.Client(['127.0.0.1:11211'], debug=0)
@@ -120,7 +119,9 @@ sys.path.append(DOCUMENT_ROOT)
 
 def get_index():
     f = open(DOCUMENT_ROOT +'/static/index.html', 'r')
-    return f.read()
+    data = f.read()
+    f.close()
+    return data
 
 def application(environ, start_response):
     output = ""
