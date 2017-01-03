@@ -109,6 +109,10 @@ class CustomHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
             SimpleHTTPServer.SimpleHTTPRequestHandler.do_GET(self)            
 
 if __name__ == "__main__":
+    if len(sys.argv) > 1 and str(sys.argv[1]) == "--cron":
+        fetchData(PAGE_SIZE)
+        quit()
+
     os.chdir("./static/")
     httpd = SocketServer.TCPServer(("", PORT), CustomHandler)
     print "serving at port", PORT
