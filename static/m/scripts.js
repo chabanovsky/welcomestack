@@ -159,7 +159,7 @@ function displayUser(index) {
         var link = stackoverflow_url + "/a/" + answer.id + "/" + tracking_code;
         template.find(".answer").attr("onclick", "window.location.href='" + link + "'");
         template.find(".score").text(answer.score);
-        template.find(".title").text(answer.title);
+        template.find(".title").text(htmlDecode(answer.title));
         template.find(".title").attr("href", link);
         answer_html += template.html();
     }
@@ -185,4 +185,10 @@ function answerTemplate() {
 
 function tagTemplate() {
     return '<div><span class="post_tag"></span></div>';
+}
+
+function htmlDecode(input) {
+    var e = document.createElement('div');
+    e.innerHTML = input;
+    return e.childNodes.length === 0 ? "" : e.childNodes[0].nodeValue;
 }
