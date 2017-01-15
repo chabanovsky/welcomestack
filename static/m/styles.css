@@ -1,4 +1,3 @@
-
 body {
     font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
     font-style: normal;
@@ -29,6 +28,7 @@ a {
     padding: 15px 0;
     margin: 0 auto;
 }
+
 #logo {
     text-align: center;
     margin-top: 4em;
@@ -36,7 +36,7 @@ a {
 
 #logo a {
     top: 5px;
-    background-image: url("/m/img/sprites.svg"),none;
+    background-image: url("/m/img/sprites.svg"), none;
     background-position: top left;
     background-repeat: no-repeat;
     position: relative;
@@ -154,7 +154,7 @@ a {
 }
 
 #users_root .col_right {
-    float:right;
+    float: right;
     width: 67%;
 }
 
@@ -179,6 +179,7 @@ a {
     display: inline-block;
     border: 1px solid #b9b9b9;
     border-radius: 2px;
+    cursor: pointer;
     float: left;
 }
 
@@ -203,7 +204,7 @@ a {
 
 #left_arrow,
 #right_arrow {
-    padding-top:50px;
+    padding-top: 50px;
     cursor: pointer;
 }
 
@@ -226,7 +227,7 @@ a {
     font-weight: bold;
     padding-bottom: 3px;
     padding-top: 10px;
-    font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 13px;
     line-height: 1.3em;
     color: #242729;
@@ -236,22 +237,24 @@ a {
 .row_title .view .title {
     width: 500px;
 }
+
 .row_tags .view .title {
     width: 580px;
 }
+
 .row_title .view .title,
 .row_tags .view .title {
     padding: 8px 10px;
-    font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 14px;
     color: #3b4045;
     background: #FFF;
     border: 1px solid #c8ccd0;
-    box-shadow: 0 1px 2px rgba(12,13,14,0.1) inset;
+    box-shadow: 0 1px 2px rgba(12, 13, 14, 0.1) inset;
     text-align: left;
     color: gray;
     float: left;
-} 
+}
 
 .post_tag {
     color: #3e6d8e;
@@ -314,7 +317,7 @@ a {
     position: relative;
     padding: 0;
     height: 36px;
-    margin: 0;    
+    margin: 0;
 }
 
 .ask_wrapper .row .view .editor_container .button {
@@ -330,9 +333,8 @@ a {
 }
 
 .ask_wrapper .row .view .editor_container .button>span {
-    background-image: url("/m/img/wmd-buttons.svg"),none;
+    background-image: url("/m/img/wmd-buttons.svg"), none;
     background-size: initial !important;
-
     width: 20px;
     height: 20px;
     display: inline-block;
@@ -375,12 +377,10 @@ a {
     padding: 1.5em 0;
     margin: 0 7%;
     display: inline-block;
-
     color: #FFF;
     background-color: #0095ff;
     border-color: #07c;
     box-shadow: inset 0 1px 0 #66bfff;
-
     position: relative;
     vertical-align: middle;
     min-height: 2.46153846em;
@@ -396,6 +396,5 @@ a {
     outline: none;
     touch-action: manipulation;
     transition: all .1s ease-in;
-
     font-size: 16px;
 }
